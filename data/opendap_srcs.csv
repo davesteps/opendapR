@@ -1,0 +1,10 @@
+name,url,opendap
+"Chlorophyll-a, Aqua MODIS, NPP, Global, Science Quality/1-day",http://oceanwatch.pfeg.noaa.gov/thredds/Satellite/MH1/chla/catalog.html?dataset=satellite/MH1/chla/1day,http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite/MH1/chla/1day
+"Chlorophyll-a, Aqua MODIS, NPP, Global, Science Quality/8-day",http://oceanwatch.pfeg.noaa.gov/thredds/Satellite/MH1/chla/catalog.html,http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite/MH1/chla/8day
+"Chlorophyll-a, Aqua MODIS, NPP, Global, Science Quality/Monthly",http://oceanwatch.pfeg.noaa.gov/thredds/Satellite/MH1/chla/catalog.html?dataset=satellite/MH1/chla/mday,http://oceanwatch.pfeg.noaa.gov/thredds/dodsC/satellite/MH1/chla/mday
+SST_GLO_SST,http://data.ncof.co.uk/thredds/catalog_ostia_motu_v3.html?dataset=METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2,http://data.ncof.co.uk/thredds/dodsC/METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2
+GLOBAL_REANALYSIS_PHYS_001_017/Monthly Mean Salinity,http://data.ncof.co.uk/thredds/catalog_global_phys_hind_motu_v4.1.html?dataset=global-reanalysis-phys-001-017-ran-uk-orap5.0-grids,http://data.ncof.co.uk/thredds/dodsC/global-reanalysis-phys-001-017-ran-uk-orap5.0-grids
+GLOBAL_REANALYSIS_PHYS_001_017/Monthly Mean Sea Surface Height,http://data.ncof.co.uk/thredds/catalog_global_phys_hind_motu_v4.1.html?dataset=global-reanalysis-phys-001-017-ran-uk-orap5.0-ssh,http://data.ncof.co.uk/thredds/dodsC/global-reanalysis-phys-001-017-ran-uk-orap5.0-ssh
+GLOBAL_REANALYSIS_PHYS_001_017/Monthly mean Sea Surface Temperature,http://data.ncof.co.uk/thredds/catalog_global_phys_hind_motu_v4.1.html?dataset=global-reanalysis-phys-001-017-ran-uk-orap5.0-sst,http://data.ncof.co.uk/thredds/dodsC/global-reanalysis-phys-001-017-ran-uk-orap5.0-sst
+argo,aa,http://data.nodc.noaa.gov/opendap/argo/data/atlantic/1997/07/nodc_R13857_001.nc
+BFM,aa,http://148.252.96.22:8080/thredds/dodsC/ns_bfm_3d
