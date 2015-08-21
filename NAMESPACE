@@ -1,1 +1,5 @@
 exportPattern("^[[:alpha:]]+")
+import('dplyr')
+import('ncdf')
+import('tidyr')
+import('reshape2')

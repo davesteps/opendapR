@@ -6,7 +6,7 @@ longnames <- function(nc){
   l
 }
 #for var return dim names
-
+getVar <- function(n){nc$var[[n]]}
 dimi <- function(var,name) which(vardims(var)==name)
 dimunits <- function(var,name) {var$dim[[dimi(var,name)]]$units}
 dimmin <- function(var,name) min(var$dim[[dimi(var,name)]]$vals)
