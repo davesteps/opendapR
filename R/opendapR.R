@@ -6,7 +6,7 @@ longnames <- function(nc){
   l
 }
 #for var return dim names
-getVar <- function(n){nc$var[[n]]}
+getVar <- function(nc,name){nc$var[[name]]}
 dimi <- function(var,name) which(vardims(var)==name)
 dimunits <- function(var,name) {var$dim[[dimi(var,name)]]$units}
 dimmin <- function(var,name) min(var$dim[[dimi(var,name)]]$vals)
@@ -45,12 +45,22 @@ datelist <- function(var){
 
 
 buildQuery <- function(var,xr,yr,vr=NULL,tr=NULL,nc=NULL){
-  #   xr <- c(df$x[1],df$x[1])
-  #   yr <- c(df$y[1],df$y[1])
-  #   vr <- c(1,25)
-  #   tr <- c(df$t[1],df$t[1])
-
+#     xr <- c(stndf$lon[1],stndf$lon[1])
+#     yr <- c(stndf$lat[1],stndf$lat[1])
+#     vr <- NULL#c(1,25)
+#     tr <-as.Date(dateRange(s1))
+#     var = v1
   ###############################
+
+
+  if(length(xr)==1){
+    xr <- rep(xr,2)}
+  if(length(yr)==1){
+    yr <- rep(yr,2)}
+  if(length(vr)==1){
+    vr <- rep(vr,2)}
+  if(length(tr)==1){
+    tr <- rep(tr,2)}
 
   if(class(var)=="character"){var <- nc$var[[var]]}
 
@@ -115,4 +125,5 @@ getQuery <- function(nc,var,qry){
   }
   df[,c(names(qry$dimV),'value')]
 }
+
 

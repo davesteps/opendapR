@@ -4,5 +4,5 @@ library(shinydashboard)
 require(shinyjs)
 require(opendapR)
 
-src <- read.csv('opendap_srcs.csv',stringsAsFactors=F)
+src <- read.csv('data/opendap_srcs.csv',stringsAsFactors=F)
 src
